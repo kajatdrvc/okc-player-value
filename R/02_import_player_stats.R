@@ -1,6 +1,6 @@
 # ==================================================
 # OKC Player Value Analysis
-# 02 - Import and Combine Player Statistics
+# Import and Combine Player Statistics
 # Season: 2024-25
 # ==================================================
 

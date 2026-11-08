@@ -4,10 +4,10 @@
 # Season: 2024-25
 # ==================================================
 
-# STEP 1: Check working directory
+# Confirm project location
 getwd()
 
-# STEP 2: Check that all raw files exist
+# Confirm required source files
 files <- c(
   "data/raw/basketball_reference/okc_totals.csv",
   "data/raw/basketball_reference/okc_per100.csv",
@@ -22,19 +22,19 @@ data.frame(
   found = file.exists(files)
 )
 
-# STEP 3: Import the salary dataset
+# Import salary data
 salaries_raw <- read.csv(
   "data/raw/salaries/okc_2024_25_salaries.csv",
   stringsAsFactors = FALSE,
   check.names = FALSE
 )
 
-# STEP 4: Inspect the salary data
+# Inspect salary structure
 str(salaries_raw)
 
 summary(salaries_raw)
 
-# STEP 5: Remove non-player rows
+# Clean salary records
 salaries <- subset(
   salaries_raw,
   season == "2024-25" & !is.na(base_salary_usd)
@@ -43,7 +43,7 @@ salaries <- subset(
 nrow(salaries)
 anyDuplicated(salaries$player)
 
-# STEP 6: Import the actual OKC playing roster
+# Import OKC player roster
 totals_raw <- read.csv(
   "data/raw/basketball_reference/okc_totals.csv",
   check.names = FALSE
@@ -56,7 +56,7 @@ okc_players <- subset(
 
 nrow(okc_players)
 
-# STEP 7: Compare the two player lists
+# Reconcile roster and salary records
 missing_salaries <- setdiff(
   okc_players$Player,
   salaries$player
@@ -69,7 +69,7 @@ no_playing_stats <- setdiff(
 )
 print(no_playing_stats)
 
-# STEP 8: Inspect additional contract records
+# Inspect additional contract records
 additional_contracts <- read.csv(
   "data/raw/salaries/okc_2024_25_additional_contracts.csv",
   stringsAsFactors = FALSE,
@@ -86,7 +86,7 @@ subset(
   player == "Branden Carlson"
 )
 
-# STEP 9: Add missing player salaries
+# Add supplemental salary records
 salary_sport_url <- paste0(
   "https://salarysport.com/basketball/nba/",
   "oklahoma-city-thunder/2024/"
@@ -142,7 +142,7 @@ salaries_working <- rbind(
   new_salaries
 )
 
-# STEP 10: Define salary and roster status
+# Define salary and roster status
 salaries_working$salary_used_usd <-
   salaries_working$base_salary_usd
 
@@ -172,7 +172,7 @@ salaries_working$salary_review <- ifelse(
   "Standard"
 )
 
-# STEP 11: Validate and save working dataset
+# Validate and save salary data
 stopifnot(
   nrow(salaries_working) == 20,
   anyDuplicated(salaries_working$player) == 0,

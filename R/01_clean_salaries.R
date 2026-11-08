@@ -1,6 +1,6 @@
 # ==================================================
 # OKC Player Value Analysis
-# 01 - Import and Clean Salary Data
+# Import and Clean Salary Data
 # Season: 2024-25
 # ==================================================
 

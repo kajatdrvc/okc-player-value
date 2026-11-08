@@ -1,0 +1,11 @@
+# Reproduce the OKC player-value analysis from the project root.
+source("R/01_clean_salaries.R")
+source("R/02_import_player_stats.R")
+source("R/03_position_creation.R")
+source("R/04_calculate_bpm.R")
+source("R/05_wins_mrp.R")
+source("R/06_final_analysis_audit.R")
+source("R/08_finalize_salaries.R")
+source("R/07_report_outputs.R")
+source("R/09_final_results_tables.R")
+message("OKC analysis complete. Outputs are in output/figures and output/tables.")

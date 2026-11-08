@@ -4,7 +4,7 @@
 # Season: 2024-25
 # ==================================================
 
-# STEP 13: Import Basketball-Reference CSV snapshots
+# Import Basketball-Reference player data
 totals <- read.csv(
   "data/raw/basketball_reference/okc_totals.csv",
   check.names = FALSE

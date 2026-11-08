@@ -1,6 +1,6 @@
 # ==================================================
 # OKC Player Value Analysis
-# 04 - Calculate BPM, OBPM and DBPM
+# Calculate BPM, OBPM and DBPM
 # Season: 2024-25
 # ==================================================
 

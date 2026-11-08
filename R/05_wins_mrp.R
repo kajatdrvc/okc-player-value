@@ -1,6 +1,6 @@
 # ==================================================
 # OKC Player Value Analysis
-# 05 - Pythagorean Wins and MRP
+# Pythagorean Wins and MRP
 # Season: 2024-25
 # ==================================================
 

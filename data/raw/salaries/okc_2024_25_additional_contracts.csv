@@ -1,0 +1,10 @@
+player,cap_hit_usd,position,share_of_cap_pct,source_url
+Daniel Theis,2087519.0,Center,1.48,https://salarysport.com/basketball/nba/oklahoma-city-thunder/2024/
+Kevin Porter Jr.,1000000.0,Point guard,0.71,https://salarysport.com/basketball/nba/oklahoma-city-thunder/2024/
+Branden Carlson,365767.0,Center,0.26,https://salarysport.com/basketball/nba/oklahoma-city-thunder/2024/
+Malevy Leons,126356.0,Power forward,0.09,https://salarysport.com/basketball/nba/oklahoma-city-thunder/2024/
+Alex Reese,79804.0,Forward,0.06,https://salarysport.com/basketball/nba/oklahoma-city-thunder/2024/
+Branden Carlson,66503.0,Center,0.05,https://salarysport.com/basketball/nba/oklahoma-city-thunder/2024/
+Branden Carlson,66503.0,Center,0.05,https://salarysport.com/basketball/nba/oklahoma-city-thunder/2024/
+,,,,
+Note: three Branden Carlson entries are retained because the source lists three separate contract amounts.,,,,

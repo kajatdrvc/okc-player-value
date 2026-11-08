@@ -1,6 +1,6 @@
 # ==================================================
 # OKC Player Value Analysis
-# 03 - Player Position and Creation Role
+# Player Position and Creation Role
 # Season: 2024-25
 # ==================================================
 

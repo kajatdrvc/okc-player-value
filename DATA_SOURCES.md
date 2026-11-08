@@ -7,7 +7,6 @@ This repository contains the source snapshots and cleaned analysis data used for
 - Salary Sport, Oklahoma City Thunder 2024 payroll archive: https://salarysport.com/basketball/nba/oklahoma-city-thunder/2024/
 - Additional salary reconciliation sources are recorded in `documentation/DATA_AUDIT.md` and `documentation/salary_decisions_2024_25.csv`.
 
-The repository intentionally excludes course lecture notes, assignment briefs, and demonstration files that were used as private reference material during development.
 
 ## Public-repository format
 

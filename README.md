@@ -40,6 +40,5 @@ output/tables/     generated results tables and exports
 
 The analysis uses reported 2024-25 player salary rather than salary-cap charge. Salary decisions for players with multiple or two-way contracts are documented separately so the final comparison can be audited.
 
-Course lecture notes, assignment briefs, and demonstration materials are not included in this public package.
 
 The public repository stores the source tables as CSV snapshots so the project remains lightweight, transparent, and easy to inspect.
